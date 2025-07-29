@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Result</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="card p-4 shadow-sm">
+            <h2 class="mb-4 text-primary text-center">Sentiment Analysis Result</h2>
+            <p><strong>Input Text:</strong> {{ text }}</p>
+            <p>
+                <strong>Sentiment:</strong>
+                <span class="
+                    {% if sentiment == 'Positive' %}text-success
+                    {% elif sentiment == 'Negative' %}text-danger
+                    {% else %}text-secondary
+                    {% endif %}
+                ">
+                    {{ sentiment }}
+                </span>
+            </p>
+            <p><strong>Polarity:</strong> {{ polarity }}</p>
+            <p><strong>Subjectivity:</strong> {{ subjectivity }}</p>
+            <div class="text-center mt-4">
+                <a href="/" class="btn btn-outline-primary">Analyze Another Text</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
