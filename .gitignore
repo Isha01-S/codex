@@ -1,0 +1,21 @@
+# Ignore Anaconda projects
+anaconda_projects/
+
+# Python artifacts
+__pycache__/
+*.pyc
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# VSCode settings
+.vscode/
+
+# Environment/venv
+env/
+.venv/
+*.env
+
+# OS generated files
+.DS_Store
+Thumbs.db
